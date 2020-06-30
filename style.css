@@ -106,6 +106,8 @@ h3{
     border-bottom: 2px solid black;
 }
 
+/* --------------Project tiles--------------- */
+
 #projects {
     margin: 10vh auto;
     display: grid;
@@ -119,7 +121,7 @@ h3{
     border-radius: 15px;
 }
 
-/* Hover Effect on images someday */
+/* Overlay Effect on images someday */
 
 /* #projects .project-tile a::after {
     content: "";
@@ -148,7 +150,15 @@ h3{
     border-radius: 15px;
     display: block;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.301);
+    transition: transform 0.4s ease;
 }
+
+#projects .project-tile img:hover {
+    transform: scale(0.975);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.301);
+}
+
+/* -----------Contact info----------- */
 
 #contact {
     border-top: 2px solid #000;
