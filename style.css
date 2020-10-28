@@ -1,124 +1,130 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-body{
-    font-family: "Poppins", Tahoma, sans-serif;
+body {
+	font-family: "Poppins", Tahoma, sans-serif;
 }
 
-#logo, #navbar{
-    width: 0;
-    position: fixed;
-    top: 0;
-    z-index: -1;
+#logo,
+#navbar {
+	width: 0;
+	position: fixed;
+	top: 0;
+	z-index: -1;
 }
 
 #welcome-section {
-    height: 100vh;
-    max-width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+	height: 100vh;
+	max-width: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
 }
 
 #welcome-section h1 {
-    font-size: 14vmin;
+	font-size: 14vmin;
 }
+
+/* -----------The bop part starts here----------- */
 
 .bop-body {
-    width: 82px;
-    height: 72px;
-    background: #fff;
-    border: 2px solid black;
-    border-radius: 4px 12px 14px 12px;
-    align-self: center;
-    position: relative;
+	width: 82px;
+	height: 72px;
+	background: #fff;
+	border: 2px solid black;
+	border-radius: 4px 12px 14px 12px;
+	align-self: center;
+	position: relative;
 }
 
-.bop-left-eye, .bop-right-eye {
-    position: absolute;
-    width: 16px;
-    height: 15px;
-    top: 10px;
-    background-color: #000;
-    border-radius: 2px;
-    animation-name: blink;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+.bop-left-eye,
+.bop-right-eye {
+	position: absolute;
+	width: 16px;
+	height: 15px;
+	top: 10px;
+	background-color: #000;
+	border-radius: 2px;
+	animation-name: blink;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
 }
 
-@keyframes blink{
-    0%{
-        top: 10px;
-        height: 15px;/*Eye Open*/
-    }
-    5%{
-        top: 25px;
-        height: 0;/*Eye Closed*/
-    }
-    10%{
-        top: 10px;
-        height: 15px;/*Eye Open*/
-    }
-    15%{
-        top: 25px;
-        height: 0;/*Eye Closed*/
-    }
-    25%{
-        top: 10px;
-        height: 15px;/*Eye Open*/
-    }
-    100%{
-        top: 10px;
-        height: 15px;
-    }
+@keyframes blink {
+	0% {
+		top: 10px;
+		height: 15px; /*Eye Open*/
+	}
+	5% {
+		top: 25px;
+		height: 0; /*Eye Closed*/
+	}
+	10% {
+		top: 10px;
+		height: 15px; /*Eye Open*/
+	}
+	15% {
+		top: 25px;
+		height: 0; /*Eye Closed*/
+	}
+	25% {
+		top: 10px;
+		height: 15px; /*Eye Open*/
+	}
+	100% {
+		top: 10px;
+		height: 15px;
+	}
 }
 
 .bop-left-eye {
-    left: 27px;
+	left: 27px;
 }
 
 .bop-right-eye {
-    left: 54px;
+	left: 54px;
 }
 
+/* -----------The bop part ends here----------- */
+
 #welcome-section #intro h2 {
-    font-size: 11vmin;
-    margin: 0 0 40px;
+	font-size: 11vmin;
+	margin: 0 0 40px;
 }
 
 #welcome-section #intro p {
-    font-size: 5vmin;
-    font-weight: 600;
+	font-size: 5vmin;
+	font-weight: 600;
 }
 
-h3{
-    display: block;
-    text-align: center;
-    font-size: 4.36vh;
-    margin: 40px 40px;
-    padding: 25px 0;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+h3 {
+	display: block;
+	text-align: center;
+	font-size: 4.36vh;
+	margin: 40px 40px;
+	padding: 25px 0;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
 }
 
 /* --------------Project tiles--------------- */
 
 #projects {
-    margin: 10vh auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 20px;
-    width: 90%;
-    height: auto;
+	margin: 10vh auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 20px;
+	width: 90%;
+	height: auto;
 }
 
 #projects .project-tile {
-    border-radius: 15px;
+	border-radius: 15px;
 }
 
 /* Overlay Effect on images someday */
@@ -143,67 +149,67 @@ h3{
 } */
 
 #projects .project-tile img {
-    max-width: 100%;
-    overflow: none;
-    height: auto;
-    border: 2px solid rgb(131, 131, 131);
-    border-radius: 15px;
-    display: block;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.301);
-    transition: transform 0.4s ease;
+	max-width: 100%;
+	overflow: none;
+	height: auto;
+	border: 2px solid rgb(131, 131, 131);
+	border-radius: 15px;
+	display: block;
+	box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.301);
+	transition: transform 0.4s ease;
 }
 
 #projects .project-tile img:hover {
-    transform: scale(0.975);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.301);
+	transform: scale(0.99);
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.301);
 }
 
 /* -----------Contact info----------- */
 
 #contact {
-    border-top: 2px solid #000;
-    margin: 100px 25px 20px;
-    padding: 70px 0;
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
+	border-top: 2px solid #000;
+	margin: 100px 25px 20px;
+	padding: 70px 0;
+	display: flex;
+	justify-content: space-evenly;
+	align-content: center;
 }
 
 #contact a {
-    display: block;
-    text-decoration: none;
-    color: #000;
-    border: 2px solid #000;
-    border-radius: 7px;
-    margin: 5px;
-    padding: 5px 15px;
-    font-size: 4.5vmin;
+	display: block;
+	text-decoration: none;
+	color: #000;
+	border: 2px solid #000;
+	border-radius: 7px;
+	margin: 5px;
+	padding: 5px 15px;
+	font-size: 4.5vmin;
 }
 
 #contact a:hover {
-    background: #000;
-    color: #fff;
+	background: #000;
+	color: #fff;
 }
 
 @media (min-width: 600px) {
-    #welcome-section h1 {
-        font-size: 12vmin;
-    }
+	#welcome-section h1 {
+		font-size: 12vmin;
+	}
 
-    #welcome-section #intro h2 {
-        font-size: 9vmin;
-    }
+	#welcome-section #intro h2 {
+		font-size: 9vmin;
+	}
 
-    #welcome-section #intro p {
-        font-size: 4vmin;
-    }
+	#welcome-section #intro p {
+		font-size: 4vmin;
+	}
 
-    #projects {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-    }
+	#projects {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 30px;
+	}
 
-    #contact a{
-        font-size: 3.5vmin;
-    }
+	#contact a {
+		font-size: 3.5vmin;
+	}
 }
