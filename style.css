@@ -127,27 +127,6 @@ h3 {
 	border-radius: 15px;
 }
 
-/* Overlay Effect on images someday */
-
-/* #projects .project-tile a::after {
-    content: "";
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 4px;
-    display: block;
-    background: #000;
-    transform: scaleY(0);
-    transform-origin: bottom;
-    transition: transform 350ms ease-in;
-    z-index: -1;
-}
-
-#projects .project-tile a:hover::after {
-    transform: scaleY(1);
-} */
-
 #projects .project-tile img {
 	max-width: 100%;
 	overflow: none;
